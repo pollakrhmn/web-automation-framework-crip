@@ -3,52 +3,7 @@
 
 <suite name="CRIP Automation Script">
 
-<!--    <test name="com.UITAP Tests">-->
-
-<!--        <parameter name="useCloudEnv" value="false"></parameter>-->
-<!--        <parameter name="envName" value="browserstack"></parameter>-->
-<!--        <parameter name="os" value="windows"></parameter>-->
-<!--        <parameter name="osVersion" value="11"></parameter>-->
-<!--        <parameter name="browserName" value="chrome"/>-->
-<!--        <parameter name="browserVersion" value="102"/>-->
-<!--        <parameter name="url" value="http://uitestingplayground.com/"/>-->
-
-<!--        <classes>-->
-<!--            <class name="uitaptests.PageButtons"></class>-->
-<!--            <class name="uitaptests.Login"></class>-->
-<!--            <class name="uitaptests.ExistingElement"></class>-->
-<!--            <class name="uitaptests.HyperLinks"></class>-->
-<!--            <class name="uitaptests.PageButtons"></class>-->
-<!--        </classes>-->
-
-<!--    </test>-->
-
-<!--    <test name="com.SauceDemo Tests">-->
-
-<!--        <parameter name="useCloudEnv" value="false"></parameter>-->
-<!--        <parameter name="envName" value="browserstack"></parameter>-->
-<!--        <parameter name="os" value="windows"></parameter>-->
-<!--        <parameter name="osVersion" value="11"></parameter>-->
-<!--        <parameter name="browserName" value="chrome"/>-->
-<!--        <parameter name="browserVersion" value="102"/>-->
-<!--        <parameter name="url" value="http://saucedemo.com/"/>-->
-
-<!--        <classes>-->
-<!--            <class name="saucedemotests.AddItemsToCart"></class>-->
-<!--            <class name="saucedemotests.CheckOut"></class>-->
-<!--            <class name="saucedemotests.HyperLink"></class>-->
-<!--            <class name="saucedemotests.DropDown"></class>-->
-<!--            <class name="saucedemotests.HoverOver"></class>-->
-<!--            <class name="saucedemotests.Icons"></class>-->
-<!--            <class name="saucedemotests.Login"></class>-->
-<!--            <class name="saucedemotests.MenuBar"></class>-->
-<!--            <class name="saucedemotests.ResetAddToCart"></class>-->
-<!--            <class name="saucedemotests.SearchBar"></class>-->
-<!--        </classes>-->
-
-<!--    </test>-->
-
-    <test name="com.GlobalSQA Tests">
+    <test name="com.UITAP Tests">
 
         <parameter name="useCloudEnv" value="false"></parameter>
         <parameter name="envName" value="browserstack"></parameter>
@@ -56,27 +11,77 @@
         <parameter name="osVersion" value="11"></parameter>
         <parameter name="browserName" value="chrome"/>
         <parameter name="browserVersion" value="102"/>
-        <parameter name="url" value="https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login"/>
+        <parameter name="url" value="http://uitestingplayground.com/"/>
 
         <classes>
-            <class name="globalsqatests.CustomerAccounts"></class>
-            <class name="globalsqatests.DeleteButton"></class>
-            <class name="globalsqatests.ResetButton"></class>
-            <class name="globalsqatests.BackButton"></class>
-            <class name="globalsqatests.AccountNumber"></class>
-            <class name="globalsqatests.TransactionsButton"></class>
-            <class name="globalsqatests.SearchCustomer"></class>
-            <class name="globalsqatests.AddCustomer"></class>
-            <class name="globalsqatests.Withdraw"></class>
-            <class name="globalsqatests.Deposit"></class>
-            <class name="globalsqatests.OpenAccount"></class>
-            <class name="globalsqatests.UserLogin"></class>
-            <class name="globalsqatests.Logout"></class>
-            <class name="globalsqatests.HomeButton"></class>
-            <class name="globalsqatests.CustomerLoginButton"></class>
-            <class name="globalsqatests.BankManagerLoginButton"></class>
+            <class name="uitaptests.ExistingElement"></class>
+            <class name="uitaptests.GetValueOrLoad"></class>
+            <class name="uitaptests.HyperLinks"></class>
+            <class name="uitaptests.Login"></class>
+            <class name="uitaptests.PageButtons"></class>
+            <class name="uitaptests.PageRedirects"></class>
+            <class name="uitaptests.PopUps"></class>
+            <class name="uitaptests.ScrollBar"></class>
+            <class name="uitaptests.TextField"></class>
+            <class name="uitaptests.ZTestRun"></class>
         </classes>
 
     </test>
+
+    <!--    <test name="com.SauceDemo Tests">-->
+
+    <!--        <parameter name="useCloudEnv" value="false"></parameter>-->
+    <!--        <parameter name="envName" value="browserstack"></parameter>-->
+    <!--        <parameter name="os" value="windows"></parameter>-->
+    <!--        <parameter name="osVersion" value="11"></parameter>-->
+    <!--        <parameter name="browserName" value="chrome"/>-->
+    <!--        <parameter name="browserVersion" value="102"/>-->
+    <!--        <parameter name="url" value="http://saucedemo.com/"/>-->
+
+    <!--        <classes>-->
+    <!--            <class name="saucedemotests.AddItemsToCart"></class>-->
+    <!--            <class name="saucedemotests.CheckOut"></class>-->
+    <!--            <class name="saucedemotests.HyperLink"></class>-->
+    <!--            <class name="saucedemotests.DropDown"></class>-->
+    <!--            <class name="saucedemotests.HoverOver"></class>-->
+    <!--            <class name="saucedemotests.Icons"></class>-->
+    <!--            <class name="saucedemotests.Login"></class>-->
+    <!--            <class name="saucedemotests.MenuBar"></class>-->
+    <!--            <class name="saucedemotests.ResetAddToCart"></class>-->
+    <!--            <class name="saucedemotests.SearchBar"></class>-->
+    <!--        </classes>-->
+
+    <!--    </test>-->
+
+    <!--    <test name="com.GlobalSQA Tests">-->
+
+    <!--        <parameter name="useCloudEnv" value="false"></parameter>-->
+    <!--        <parameter name="envName" value="browserstack"></parameter>-->
+    <!--        <parameter name="os" value="windows"></parameter>-->
+    <!--        <parameter name="osVersion" value="11"></parameter>-->
+    <!--        <parameter name="browserName" value="chrome"/>-->
+    <!--        <parameter name="browserVersion" value="102"/>-->
+    <!--        <parameter name="url" value="https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login"/>-->
+
+    <!--        <classes>-->
+    <!--            <class name="globalsqatests.CustomerAccounts"></class>-->
+    <!--            <class name="globalsqatests.DeleteButton"></class>-->
+    <!--            <class name="globalsqatests.ResetButton"></class>-->
+    <!--            <class name="globalsqatests.BackButton"></class>-->
+    <!--            <class name="globalsqatests.AccountNumber"></class>-->
+    <!--            <class name="globalsqatests.TransactionsButton"></class>-->
+    <!--            <class name="globalsqatests.SearchCustomer"></class>-->
+    <!--            <class name="globalsqatests.AddCustomer"></class>-->
+    <!--            <class name="globalsqatests.Withdraw"></class>-->
+    <!--            <class name="globalsqatests.Deposit"></class>-->
+    <!--            <class name="globalsqatests.OpenAccount"></class>-->
+    <!--            <class name="globalsqatests.UserLogin"></class>-->
+    <!--            <class name="globalsqatests.Logout"></class>-->
+    <!--            <class name="globalsqatests.HomeButton"></class>-->
+    <!--            <class name="globalsqatests.CustomerLoginButton"></class>-->
+    <!--            <class name="globalsqatests.BankManagerLoginButton"></class>-->
+    <!--        </classes>-->
+
+    <!--    </test>-->
 
 </suite>

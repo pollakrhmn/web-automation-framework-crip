@@ -1,189 +1,237 @@
 package uitaptests;
 
 import base.CommonAPI;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import uitappages.DynamicIDPage;
-import uitappages.HomePage;
-import uitappages.ScrollbarsPage;
-import uitappages.VisibilityPage;
+import uitappages.*;
 
 public class PageButtons extends CommonAPI {
 
     private final Logger LOG = LoggerFactory.getLogger(PageButtons.class);
 
     @Test //T21 Verify the recording of "Button with Dynamic ID" being clicked
-    public void verifyDynamicIDButton() {
-        getDriver().get("http://uitestingplayground.com/dynamicid");
-        LOG.info("Redirect to Dynamic ID successful");
+    public void DynamicIDButtonClick() {
+        HomePage home = new HomePage(getDriver());
+        home.clickDynamicId();
         DynamicIDPage autoPage = new DynamicIDPage(getDriver());
-        autoPage.clickDynIDBtn();
-        LOG.info("Button click was successful");
-        Assert.assertTrue(autoPage.checkBtnClickable());
+        autoPage.clickDynIDButton();
+        Assert.assertTrue(autoPage.checkButtonClickable());
     }
 
     @Test //T23 Verify "Hiding Button" is clickable
-    public void verifyHidingClick() {
-        getDriver().get("http://uitestingplayground.com/scrollbars");
-        LOG.info("Redirect to Scrollbars webpage successful");
+    public void HidingButtonClick() {
+        HomePage home = new HomePage(getDriver());
+        home.clickScrollBars();
         ScrollbarsPage autoPage = new ScrollbarsPage(getDriver());
         autoPage.clickHidingBtn();
-        LOG.info("Hiding Button click was successful");
-        Assert.assertTrue(autoPage.checkBtnClickable());
+        Assert.assertTrue(autoPage.checkButtonClickable());
     }
 
     @Test //T24 Verify eight different button web elements are clickable, with "Hide" button being last
     public void ClickableRemovedButton() {
         HomePage home = new HomePage(getDriver());
         home.clickVisibility();
-        LOG.info("Visibility click successful");
-        LOG.info("Redirect to Visibility webpage successful");
         VisibilityPage autoPage = new VisibilityPage(getDriver());
-        autoPage.clickRemoveButton();
-        LOG.info("Remove Button click successful");
+        autoPage.clickRemovedButton();
         Assert.assertTrue(autoPage.checkRemovedClickable());
-        LOG.info("Button clickable successful");
-//        autoPage.clickHideButton();
-//        LOG.info("Button click successful");
-//        Assert.assertTrue(autoPage.checkHideClickable());
+    }
+
+    @Test //T25 Verify that clicking on "Hide" element hides all of the other 7 clickable web elements
+    public void HideFunction() {
+        HomePage home = new HomePage(getDriver());
+        home.clickVisibility();
+        VisibilityPage autoPage = new VisibilityPage(getDriver());
+        Assert.assertTrue(autoPage.otherButtonsVisibility());
+        autoPage.clickHideButton();
+        Assert.assertTrue(autoPage.checkHideClickable());
+        boolean hidingButtons = autoPage.otherButtonsInvisibility();
+        Assert.assertTrue(hidingButtons);
+    }
+
+    @Test //T26 Verify the text boxes inside Playground scroll-window is clickable
+    public void textBoxClickable() {
+        HomePage home = new HomePage(getDriver());
+        home.clickOverlappedElement();
+        OverlappedElementPage autoPage = new OverlappedElementPage(getDriver());
+        autoPage.selectId();
+        Assert.assertTrue(autoPage.checkIDClickable());
+        WebElement nameTextField = getDriver().findElement(By.xpath("/html[1]/body[1]/section[1]/div[1]/div[1]/div[1]/input[2]"));
+        scrollToView(nameTextField);
+        autoPage.selectName();
+        Assert.assertTrue(autoPage.checkNameClickable());
+    }
+
+    @Test //T28 Verify the three colored buttons on webpage are clickable part 1
+    public void greenButtonClickable() {
+        HomePage home = new HomePage(getDriver());
+        home.clickClassAttribute();
+        ClassAttributePage autoPage = new ClassAttributePage(getDriver());
+        autoPage.clickGreenButton();
+        Assert.assertTrue(autoPage.checkGreenClickable());
+    }
+
+    @Test //T35 Verify that user is able to click a second time on "Button" button
+    public void secondClickonButton() {
+        HomePage home = new HomePage(getDriver());
+        home.clickHiddenLayers();
+        HiddenLayersPage autoPage = new HiddenLayersPage(getDriver());
+        autoPage.clickBothButtons();
+        Assert.assertTrue(autoPage.checkGreenClickable());
+        Assert.assertTrue(autoPage.checkBlueClickable());
+    }
+
+    @Test //T36 Verify that user is able to click on a button that reads "Button That Ignores DOM Click Event"
+    public void verifyDOMButton() {
+        HomePage home = new HomePage(getDriver());
+        home.clickClickLink();
+        ClickPage autoPage = new ClickPage(getDriver());
+        autoPage.clickDOM();
+        Assert.assertTrue(autoPage.checkDOMClickable());
+        autoPage.clickDOM();
+        Assert.assertTrue(autoPage.checkDOMClickable());
+        LOG.info("Second click on DOM-related button successful");
+    }
+
+    @Test //T41 Verify Start button on Progress Bar Webpage is displayed and clickable
+    public void verifyStartButton() {
+        HomePage home = new HomePage(getDriver());
+        home.clickProgressBar();
+        ProgressBarPage autoPage = new ProgressBarPage(getDriver());
+        autoPage.clickStart();
+        Assert.assertTrue(autoPage.checkStartButton());
+        autoPage.clickStart();
+        Assert.assertTrue(autoPage.checkStartButton());
+        LOG.info("Second click on Start button successful");
+    }
+
+    @Test //T42 Verify Stop button on Progress Bar Webpage is displayed and clickable
+    public void verifyStopButton() {
+        HomePage home = new HomePage(getDriver());
+        home.clickProgressBar();
+        ProgressBarPage autoPage = new ProgressBarPage(getDriver());
+        autoPage.clickStop();
+        Assert.assertTrue(autoPage.checkStopButton());
+        autoPage.clickStop();
+        Assert.assertTrue(autoPage.checkStopButton());
+        LOG.info("Second click on Stop button successful");
+    }
+
+    @Test //T44 Verify button on Non-Breaking Space Webpage is displayed and clickable
+    public void verifyMyButton() {
+        HomePage home = new HomePage(getDriver());
+        home.clickNonBreakingSpace();
+        NonBreakingSpacePage autoPage = new NonBreakingSpacePage(getDriver());
+        autoPage.clickMyButton();
+        autoPage.clickMyButton();
+        Assert.assertTrue(autoPage.checkMyButton());
+        LOG.info("Second click on 'My Button' button successful");
+    }
+
+    @Test //T60 Verify "Button Appearing After Delay" is clickable
+    public void buttonAfterDelay() {
+        HomePage home = new HomePage(getDriver());
+        home.clickLoadDelay();
+        LoadDelayPage autoPage = new LoadDelayPage(getDriver());
+        autoPage.clickButtonAppearing();
+        Assert.assertTrue(autoPage.checkButtonAfterDelay());
     }
 
     @Test //T61 Verify eight different button web elements are clickable, with "Hide" button being last
-    public void ClickableZeroWidthButton() {
+    public void clickableZeroWidthButton() {
         HomePage home = new HomePage(getDriver());
         home.clickVisibility();
-        LOG.info("Visibility click successful");
-        LOG.info("Redirect to Visibility webpage successful");
         VisibilityPage autoPage = new VisibilityPage(getDriver());
         autoPage.clickZeroWidthButton();
-        LOG.info("Button click successful");
         Assert.assertTrue(autoPage.checkZeroWidClickable());
-        LOG.info("Button clickable successful");
-    }
-
-    @Test //T61 Verify eight different button web elements are clickable, with "Hide" button being last
-    public void ClickableOverlapButton() {
-        HomePage home = new HomePage(getDriver());
-        home.clickVisibility();
-        LOG.info("Visibility click successful");
-        LOG.info("Redirect to Visibility webpage successful");
-        VisibilityPage autoPage = new VisibilityPage(getDriver());
-        autoPage.clickOverlapButton();
-        LOG.info("Button click successful");
-        Assert.assertTrue(autoPage.checkOverlapClickable());
-        LOG.info("Button clickable successful");
     }
 
     @Test //T62 Verify eight different button web elements are clickable, with "Hide" button being last
-    public void ClickableTransparentButton() {
+    public void clickableOverlapButton() {
         HomePage home = new HomePage(getDriver());
         home.clickVisibility();
-        LOG.info("Visibility click successful");
-        LOG.info("Redirect to Visibility webpage successful");
         VisibilityPage autoPage = new VisibilityPage(getDriver());
-        autoPage.clickTransparentButton();
-        LOG.info("Button click successful");
-        Assert.assertTrue(autoPage.checkTransparentClickable());
-        LOG.info("Button clickable successful");
+        autoPage.clickOverlapButton();
+        Assert.assertTrue(autoPage.checkOverlapClickable());
     }
 
     @Test //T63 Verify eight different button web elements are clickable, with "Hide" button being last
-    public void ClickableInvisibleButton() {
+    public void clickableTransparentButton() {
         HomePage home = new HomePage(getDriver());
         home.clickVisibility();
-        LOG.info("Visibility click successful");
-        LOG.info("Redirect to Visibility webpage successful");
         VisibilityPage autoPage = new VisibilityPage(getDriver());
-        autoPage.clickInvisibleButton();
-        LOG.info("Button click successful");
-        Assert.assertTrue(autoPage.checkVisibilHiddenClickable());
-        LOG.info("Button clickable successful");
+        autoPage.clickTransparentButton();
+        Assert.assertTrue(autoPage.checkTransparentClickable());
     }
 
     @Test //T64 Verify eight different button web elements are clickable, with "Hide" button being last
-    public void ClickableNotDisplayButton() {
+    public void clickableVisibilHiddenButton() {
         HomePage home = new HomePage(getDriver());
         home.clickVisibility();
-        LOG.info("Visibility click successful");
-        LOG.info("Redirect to Visibility webpage successful");
         VisibilityPage autoPage = new VisibilityPage(getDriver());
-        autoPage.clickNotDisplayedButton();
-        LOG.info("Button click successful");
-        Assert.assertTrue(autoPage.checkDisplayNonClickable());
-        LOG.info("Button clickable successful");
+        autoPage.clickVisibilHiddenButton();
+        Assert.assertTrue(autoPage.checkVisibilHiddenClickable());
     }
 
     @Test //T65 Verify eight different button web elements are clickable, with "Hide" button being last
-    public void ClickableOffScreenButton() {
+    public void clickableDisplayNoneButton() {
         HomePage home = new HomePage(getDriver());
         home.clickVisibility();
-        LOG.info("Visibility click successful");
-        LOG.info("Redirect to Visibility webpage successful");
+        VisibilityPage autoPage = new VisibilityPage(getDriver());
+        autoPage.clickDisplayNonButton();
+        Assert.assertTrue(autoPage.checkDisplayNonClickable());
+    }
+
+    @Test //T66 Verify eight different button web elements are clickable, with "Hide" button being last
+    public void clickableOffScreenButton() {
+        HomePage home = new HomePage(getDriver());
+        home.clickVisibility();
         VisibilityPage autoPage = new VisibilityPage(getDriver());
         autoPage.clickOffScreenButton();
-        LOG.info("Button click successful");
         Assert.assertTrue(autoPage.checkOffscreenClickable());
-        LOG.info("Button clickable successful");
+    }
+
+    @Test //T68 Verify the three colored buttons on webpage are clickable part 2
+    public void yellowButtonClickable() {
+        HomePage home = new HomePage(getDriver());
+        home.clickClassAttribute();
+        ClassAttributePage autoPage = new ClassAttributePage(getDriver());
+        autoPage.clickYellowButton();
+        LOG.info("Button resulted in no popup Successful");
+        Assert.assertTrue(autoPage.checkYellowClickable());
+    }
+
+    @Test //T79 Verify button name can be changed multiple times from user input
+    public void multipleButtonChanges() {
+        HomePage home = new HomePage(getDriver());
+        home.clickTextInput();
+        TextInputPage autoPage = new TextInputPage(getDriver());
+        String expectedText1 = "Text Attempt #1";
+        autoPage.typeInTextBox(expectedText1);
+        autoPage.clickTextChangeButton();
+        String actualText1 = autoPage.getTextFromButton();
+        Assert.assertEquals(expectedText1, actualText1);
+        LOG.info("First text button input matches as expected Successful");
+        String expectedText2 = "Text Attempt #2";
+        autoPage.typeInTextBox(expectedText2);
+        autoPage.clickTextChangeButton();
+        String actualText2 = autoPage.getTextFromButton();
+        Assert.assertEquals(expectedText2, actualText2);
+        LOG.info("New text button input matches as expected Successful");
+    }
+
+    @Test //T80 Verify webpage button is clickable
+    public void textInputButton() {
+        HomePage home = new HomePage(getDriver());
+        home.clickTextInput();
+        TextInputPage autoPage = new TextInputPage(getDriver());
+        autoPage.clickTextChangeButton();
+        Assert.assertTrue(autoPage.checkButtonUsable());
     }
 
 }
 
 
-//    @Test //T25 Verify that clicking on "Hide" element hides all of the other 7 clickable web elements
-//    public void verifyHideFunction() {
-//        getDriver().get("http://uitestingplayground.com/visibility");
-//        LOG.info("Redirect to Visibility webpage successful");
-//        VisibilityPage autoPage = new VisibilityPage(getDriver());
-//        autoPage.clickHideButton();
-//        LOG.info("Hide Button click successful");
-//        String checkRemoved
-//        Assert.assertFalse(autoPage.checkZeroWidClickable());
-//        Assert.assertFalse(autoPage.checkTransparentClickable());
-//        Assert.assertFalse(autoPage.checkVisibilHiddenClickable());
-//        Assert.assertFalse(autoPage.checkDisplayNonClickable());
-//        Assert.assertFalse(autoPage.checkOffscreenClickable());
-//        Assert.assertFalse(autoPage.checkOverlapClickable());
-//    }
-
-//    @Test //26 Verify the text boxes inside Playground scroll-window is clickable
-//    public void verifyTxtBxClickable() {
-//        LOG.info("TextBox click successful");
-//    }
-//
-//    @Test //28 Verify the three buttons on webpage are clickable
-//    public void verifyThreeBtns() {
-//        LOG.info("Button click successful");
-//    }
-//
-//    @Test //T35 Verify that user is able to click a second time on "Button" button
-//    public void verifySecondClick() {
-//        LOG.info("Button click successful");
-//    }
-//
-//    @Test //T36 Verify that user is able to click on a button that reads "Button That Ignores DOM Click Event"
-//    public void verifyDOMButton() {
-//        LOG.info("Button click successful");
-//    }
-//
-//    @Test //T41 Verify Start button on Progress Bar Webpage is displayed and clickable
-//    public void verifyStartButton() {
-//        LOG.info("Button click successful");
-//    }
-//
-//    @Test //T42 Verify Stop button on Progress Bar Webpage is displayed and clickable
-//    public void verifyStopButton() {
-//        LOG.info("Button click successful");
-//    }
-//
-//    @Test //T44 Verify button on Non-Breaking Space Webpage is displayed and clickable
-//    public void verifyMyButton() {
-//        LOG.info("Button click successful");
-//    }
-//
-//    @Test //T60 Verify "Button Appearing After Delay" is clickable
-//    public void verifyBtnAfterDelay() {
-//        LOG.info("Button click successful");
-//    }
-//}

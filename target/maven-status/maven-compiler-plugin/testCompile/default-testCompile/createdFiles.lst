@@ -2,7 +2,6 @@ saucedemotests\DropDown.class
 saucedemotests\Icons.class
 globalsqatests\DeleteButton.class
 saucedemotests\CheckOut.class
-uitaptests\TestRun.class
 globalsqatests\UserLogin.class
 saucedemotests\AddItemsToCart.class
 globalsqatests\BankManagerLoginButton.class
@@ -12,8 +11,6 @@ globalsqatests\AddCustomer.class
 globalsqatests\ResetButton.class
 saucedemotests\MenuBar.class
 globalsqatests\OpenAccount.class
-globalsqatests\AccountNumberDropDown.class
-uitaptests\VerifyOpeningLinks.class
 globalsqatests\HomeButton.class
 globalsqatests\CustomerLoginButton.class
 globalsqatests\TransactionsButton.class

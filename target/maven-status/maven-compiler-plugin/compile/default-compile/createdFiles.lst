@@ -11,7 +11,6 @@ utility\Utility.class
 reporting\ExtentTestManager.class
 utility\ExcelReader.class
 saucedemopages\CheckOutStepOnePage.class
-uitappages\OverlappedPage.class
 uitappages\ShadowDOMPage.class
 uitappages\HomePage.class
 uitappages\AjaxPage.class

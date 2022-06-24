@@ -6,49 +6,95 @@
   <component name="ChangeListManager">
     <list default="true" id="7af8a1fa-1a94-4245-ae7d-fe301b8bbd75" name="Changes" comment="Merge pull request #2 from FaieqLaskar/master&#10;&#10;trying to push to test lead">
       <changelist_data name="Pollak" email="103900627+pollakrhmn@users.noreply.github.com" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uitaptests/ExistingElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uitaptests/GetValueOrLoad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/uitaptests/PageRedirects.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Extent-Report/ExtentReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/Extent-Report/ExtentReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/AjaxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/AjaxPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/ClassAttributePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/ClassAttributePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/ClickPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/ClickPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/ClientDelayPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/ClientDelayPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/DynamicIDPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/DynamicIDPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/DynamicTablePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/DynamicTablePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/HiddenLayersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/HiddenLayersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/LoadDelayPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/LoadDelayPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/MouseOverPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/MouseOverPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/NonBreakingSpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/NonBreakingSpacePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/OverlappedElementPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/OverlappedElementPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/ProgressBarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/ProgressBarPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/SampleAppPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/SampleAppPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/ScrollbarsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/ScrollbarsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/ShadowDOMPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/ShadowDOMPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/TextInputPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/TextInputPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/VerifyTextPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/VerifyTextPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/uitappages/VisibilityPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/uitappages/VisibilityPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uitaptests/HyperLinks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitaptests/HyperLinks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uitaptests/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitaptests/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uitaptests/PageButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitaptests/PageButtons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uitaptests/PopUps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitaptests/PopUps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uitaptests/ScrollBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitaptests/ScrollBar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uitaptests/TestRun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitaptests/ZTestRun.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uitaptests/TextField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/uitaptests/TextField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uitaptests/Value.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/uitaptests/VerifyExistingElement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/AjaxPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/AjaxPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/ClassAttributePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/ClassAttributePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/ClickPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/ClickPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/ClientDelayPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/ClientDelayPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/DynamicIDPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/DynamicIDPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/DynamicTablePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/DynamicTablePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/DynamicTblPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/HiddenLayersPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/HiddenLayersPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/LoadDelayPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/LoadDelayPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/MouseOverPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/MouseOverPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/MouseOvrPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/NonBreakingSpPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/OverlappedElPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/OverlappedElementPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/OverlappedElementPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/ProgressBarPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/ProgressBarPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/SampleAppPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/SampleAppPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/ScrollbarsPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/ScrollbarsPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/ShadowDOMPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/ShadowDOMPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/TextInputPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/TextInputPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/TxtInputPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/VerifyTextPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/VerifyTextPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/VerifyTxtPage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/uitappages/VisibilityPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/uitappages/VisibilityPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utility/ConnectDB.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utility/ConnectDB.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utility/ExcelReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utility/ExcelReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utility/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/utility/Utility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/CRIP Automation Script/com.GlobalSQA Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/CRIP Automation Script/com.GlobalSQA Tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/CRIP Automation Script/com.GlobalSQA Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/CRIP Automation Script/com.GlobalSQA Tests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/CRIP Automation Script/com.SauceDemo Tests.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/CRIP Automation Script/com.SauceDemo Tests.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/CRIP Automation Script/com.SauceDemo Tests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/CRIP Automation Script/com.SauceDemo Tests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/CRIP Automation Script/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/CRIP Automation Script/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.AccountNumberDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.AccountNumberDropDown.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.AddCustomer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.AddCustomer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.BackButton.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.BackButton.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.BankManagerLoginButton.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.BankManagerLoginButton.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.CustomerLoginButton.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.CustomerLoginButton.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.DeleteButton.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.DeleteButton.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.HomeButton.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.HomeButton.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.OpenAccount.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.OpenAccount.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.ResetButton.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.ResetButton.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.SearchCustomer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.SearchCustomer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.TransactionsButton.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.TransactionsButton.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.UserLogin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-globalsqatests.UserLogin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.AddItemsToCart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.AddItemsToCart.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.CheckOut.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.CheckOut.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.DropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.DropDown.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.HoverOver.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.HoverOver.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.Icons.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.Icons.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.Login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.Login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.MenuBar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.MenuBar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.ResetAddToCart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.ResetAddToCart.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.SearchBar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-saucedemotests.SearchBar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/CRIP Automation Script/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/CRIP Automation Script/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/CRIP Automation Script/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/CRIP Automation Script/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/CRIP Automation Script/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/CRIP Automation Script/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/CRIP Automation Script/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/CRIP Automation Script/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/CRIP Automation Script/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/CRIP Automation Script/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/CRIP Automation Script/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/CRIP Automation Script/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-failed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/globalsqatests/AccountNumberDropDown.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/globalsqatests/BackButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/globalsqatests/BackButton.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/globalsqatests/CustomerDropDown.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/globalsqatests/Logout.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/globalsqatests/Logout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/logback-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/logback-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/ExistingElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/uitaptests/ExistingElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/HyperLinks.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/uitaptests/HyperLinks.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/uitaptests/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/PageButtons.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/uitaptests/PageButtons.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/PopUps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/uitaptests/PopUps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/ScrollBar.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/uitaptests/ScrollBar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/TestRun.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/TextField.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/uitaptests/TextField.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/Value.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/VerifyExistingElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/VerifyLoginFunctionality.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/VerifyOpeningLinks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/VerifyPageBtns.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/VerifyPopUps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/VerifyScroll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/VerifyTyping.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/uitaptests/VerifyValue.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +115,6 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="TestNG" name="$PROJECT_DIR$/src/test/resources/runner.xml" />
-    </enabled-run-configurations>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -98,27 +139,14 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/EvilT/IdeaProjects/LearnJava&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rowna/IdeaProjects/NewFolderForCRIP0619/web-automation-framework-crip&quot;,
     &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.C:/Users/EvilT/IdeaProjects/FinalFrameworkProject/web-automation-framework-crip/src/test/resources/runner.xml">
-    <configuration name="ConnectDB" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utility.ConnectDB" />
-      <module name="web-automation-framework-crip" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utility.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/Users/rowna/IdeaProjects/NewFolderForCRIP0619/web-automation-framework-crip/src/test/resources/runner.xml">
     <configuration name="ExcelReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="utility.ExcelReader" />
       <module name="web-automation-framework-crip" />
@@ -145,26 +173,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AccountNumberDropDown.selectMultipleAccountNumbersTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="web-automation-framework-crip" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="globalsqatests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runner.xml" />
-      <option name="PACKAGE_NAME" value="globalsqatests" />
-      <option name="MAIN_CLASS_NAME" value="globalsqatests.AccountNumberDropDown" />
-      <option name="METHOD_NAME" value="selectMultipleAccountNumbersTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="C:/Users/EvilT/IdeaProjects/FinalFrameworkProject/web-automation-framework-crip/src/test/resources/runner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="C:/Users/rowna/IdeaProjects/NewFolderForCRIP0619/web-automation-framework-crip/src/test/resources/runner.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="web-automation-framework-crip" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runner.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
@@ -174,13 +183,56 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PageButtons.verifyTextBoxClickable" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="web-automation-framework-crip" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uitaptests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uitaptests" />
+      <option name="MAIN_CLASS_NAME" value="uitaptests.PageButtons" />
+      <option name="METHOD_NAME" value="verifyTextBoxClickable" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextField.verifyIDTextBoxTyping" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="web-automation-framework-crip" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="uitaptests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="uitaptests" />
+      <option name="MAIN_CLASS_NAME" value="uitaptests.TextField" />
+      <option name="METHOD_NAME" value="verifyIDTextBoxTyping" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ExcelReader" />
+      <item itemvalue="Application.Utility" />
+      <item itemvalue="TestNG.C:/Users/rowna/IdeaProjects/NewFolderForCRIP0619/web-automation-framework-crip/src/test/resources/runner.xml" />
+      <item itemvalue="TestNG.PageButtons.verifyTextBoxClickable" />
+      <item itemvalue="TestNG.TextField.verifyIDTextBoxTyping" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/EvilT/IdeaProjects/FinalFrameworkProject/web-automation-framework-crip/src/test/resources/runner.xml" />
-        <item itemvalue="Application.Utility" />
-        <item itemvalue="TestNG.AccountNumberDropDown.selectMultipleAccountNumbersTest" />
+        <item itemvalue="TestNG.C:/Users/rowna/IdeaProjects/NewFolderForCRIP0619/web-automation-framework-crip/src/test/resources/runner.xml" />
+        <item itemvalue="TestNG.TextField.verifyIDTextBoxTyping" />
+        <item itemvalue="TestNG.PageButtons.verifyTextBoxClickable" />
         <item itemvalue="Application.ExcelReader" />
-        <item itemvalue="Application.ConnectDB" />
+        <item itemvalue="Application.Utility" />
       </list>
     </recent_temporary>
   </component>

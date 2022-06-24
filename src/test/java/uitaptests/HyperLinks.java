@@ -19,7 +19,7 @@ public class HyperLinks extends CommonAPI {
         home.clickResources();
         String expectedUrlLink = "http://uitestingplayground.com/resources";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
 
@@ -29,7 +29,7 @@ public class HyperLinks extends CommonAPI {
         home.clickLogo();
         String expectedUrlLink = "http://uitestingplayground.com/";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T3 Verify the "Home" link is usable
@@ -38,7 +38,7 @@ public class HyperLinks extends CommonAPI {
         home.clickHome();
         String expectedUrlLink = "http://uitestingplayground.com/home";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T4 Verify the "Scrollbars" link is usable
@@ -47,16 +47,16 @@ public class HyperLinks extends CommonAPI {
         home.clickScrollBars();
         String expectedUrlLink = "http://uitestingplayground.com/scrollbars";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T5 Verify the "Dynamic ID" link is usable
-    public void dynamicIdLinkTest() {
+    public void clickDynamicIdLinkTest() {
         HomePage home = new HomePage(getDriver());
         home.clickDynamicId();
         String expectedUrlLink = "http://uitestingplayground.com/dynamicid";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T6 Verify the "AJAX Data" link is usable
@@ -65,7 +65,7 @@ public class HyperLinks extends CommonAPI {
         home.clickAjaxData();
         String expectedUrlLink = "http://uitestingplayground.com/ajax";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T7 Verify the "Visibility" link is usable
@@ -74,7 +74,7 @@ public class HyperLinks extends CommonAPI {
         home.clickVisibility();
         String expectedUrlLink = "http://uitestingplayground.com/visibility";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T8 Verify the "Overlapped Element" link is usable
@@ -83,7 +83,7 @@ public class HyperLinks extends CommonAPI {
         home.clickOverlappedElement();
         String expectedUrlLink = "http://uitestingplayground.com/overlapped";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T9 Verify the "Class Attribute" link is usable
@@ -92,7 +92,7 @@ public class HyperLinks extends CommonAPI {
         home.clickClassAttribute();
         String expectedUrlLink = "http://uitestingplayground.com/classattr";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T10 Verify the "Client Side Delay" link is usable
@@ -101,7 +101,7 @@ public class HyperLinks extends CommonAPI {
         home.clickClientSideDelay();
         String expectedUrlLink = "http://uitestingplayground.com/clientdelay";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T11 Verify the "Dynamic Table" link is usable
@@ -110,7 +110,7 @@ public class HyperLinks extends CommonAPI {
         home.clickDynamicTable();
         String expectedUrlLink = "http://uitestingplayground.com/dynamictable";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T12 Verify the "Sample App" link is usable
@@ -119,7 +119,7 @@ public class HyperLinks extends CommonAPI {
         home.clickSampleApp();
         String expectedUrlLink = "http://uitestingplayground.com/sampleapp";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T13 Verify the "Hidden Layers" link is usable
@@ -128,16 +128,16 @@ public class HyperLinks extends CommonAPI {
         home.clickHiddenLayers();
         String expectedUrlLink = "http://uitestingplayground.com/hiddenlayers";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T14 Verify the "Click" link is usable
-    public void clickLinkTest() {
+    public void clickClickLinkTest() {
         HomePage home = new HomePage(getDriver());
-        home.clickLink();
+        home.clickClickLink();
         String expectedUrlLink = "http://uitestingplayground.com/click";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T15 Verify the "Verify Text" link is usable
@@ -146,7 +146,7 @@ public class HyperLinks extends CommonAPI {
         home.clickVerifyText();
         String expectedUrlLink = "http://uitestingplayground.com/verifytext";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T16 Verify the "Mouse Over" link is usable
@@ -155,7 +155,7 @@ public class HyperLinks extends CommonAPI {
         home.clickMouseOver();
         String expectedUrlLink = "http://uitestingplayground.com/mouseover";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T17 Verify that "Load Delay" webpage is able to load after a delay
@@ -164,7 +164,7 @@ public class HyperLinks extends CommonAPI {
         home.clickLoadDelay();
         String expectedUrlLink = "http://uitestingplayground.com/loaddelay";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T18 Verify the "Text Input" link is usable
@@ -173,7 +173,7 @@ public class HyperLinks extends CommonAPI {
         home.clickTextInput();
         String expectedUrlLink = "http://uitestingplayground.com/textinput";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T19 Verify the "Progress Bar" link is usable
@@ -182,7 +182,7 @@ public class HyperLinks extends CommonAPI {
         home.clickNonBreakingSpace();
         String expectedUrlLink = "http://uitestingplayground.com/nbsp";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T20 Verify the "Non-Breaking Space" link is usable
@@ -191,71 +191,76 @@ public class HyperLinks extends CommonAPI {
         home.clickProgressBar();
         String expectedUrlLink = "http://uitestingplayground.com/progressbar";
         Assert.assertEquals(expectedUrlLink, getUrlLink());
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T53 Verify "Star" link is usable
-    public void verifyStarLinkExterLink() {
+    public void starLinkExternalLink() {
         HomePage home = new HomePage(getDriver());
         home.clickStarLink();
-        LOG.info("Star link click successful");
         List<String> newTabs = new ArrayList<>(getDriver().getWindowHandles());
         getDriver().switchTo().window(newTabs.get(1));
         getDriver().switchTo().window(newTabs.get(0));
         getDriver().close();
+        LOG.info("Previous tab closed successful");
         getDriver().switchTo().window(newTabs.get(1));
+        LOG.info("Switch to new tab successful");
         String expectedURL = "https://github.com/inflectra/ui-test-automation-playground";
         Assert.assertEquals(getDriver().getCurrentUrl(), expectedURL);
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T54 Verify "Fork the Website on Github" link is usable
-    public void verifyForkGitExterLink() {
+    public void forkGitExternalLink() {
         HomePage home = new HomePage(getDriver());
         home.clickForkWebsite();
-        LOG.info("'Fork the Website on Github' link click successful");
         String expectedURL = "https://github.com/inflectra/ui-test-automation-playground";
         Assert.assertEquals(getDriver().getCurrentUrl(), expectedURL);
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T56 Verify "Rapise" external link is usable
-    public void verifyRapiseExterLink() {
+    public void rapiseExternalLink() {
         HomePage home = new HomePage(getDriver());
         home.clickRapise();
-        LOG.info("'Rapise' link click successful");
         String expectedURL = "https://www.inflectra.com/Rapise/";
         Assert.assertEquals(getDriver().getCurrentUrl(), expectedURL);
-        LOG.info("Redirect to new page successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T57 Verify "Inflectra Corporation" external link is usable
-    public void verifyInflectraExterLink() {
+    public void inflectraExternalLink() {
         HomePage home = new HomePage(getDriver());
         home.clickInflectraCorp();
-        LOG.info("'Inflectra Corporation' link click successful");
         String expectedURL = "https://www.inflectra.com/";
         Assert.assertEquals(getDriver().getCurrentUrl(), expectedURL);
-        LOG.info("Redirect to Inflectra homepage successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T58 Verify "CC 4.0 BY-NC" external link is usable
-    public void verifyCC4ExterLink() {
+    public void cc4ExternalLink() {
         HomePage home = new HomePage(getDriver());
         home.clickCC4Link();
-        LOG.info("'CC 4.0 BY-NC' link click successful");
         String expectedURL = "https://creativecommons.org/licenses/by-nc/4.0/";
         Assert.assertEquals(getDriver().getCurrentUrl(), expectedURL);
-        LOG.info("Redirect to Creative Commons webpage successful");
+        LOG.info("Webpage match successful");
     }
 
     @Test //T59 Verify "Apache License 2.0" external link is usable
-    public void verifyApacheLicExterLink() {
+    public void apacheLicenseExternalLink() {
         HomePage home = new HomePage(getDriver());
         home.clickApacheLicense();
-        LOG.info("'Apache License 2.0' link click successful");
         String expectedURL = "https://www.apache.org/licenses/LICENSE-2.0";
         Assert.assertEquals(getDriver().getCurrentUrl(), expectedURL);
-        LOG.info("Redirect to Apache webpage successful");
+        LOG.info("Webpage match successful");
+    }
+
+    @Test //T75 Verify the "Shadow DOM" link is usable
+    public void clickShadowDOMLinkTest() {
+        HomePage home = new HomePage(getDriver());
+        home.clickShadowDOM();
+        String expectedURL = "http://uitestingplayground.com/shadowdom";
+        Assert.assertEquals(getDriver().getCurrentUrl(), expectedURL);
+        LOG.info("Webpage match successful");
     }
 }
