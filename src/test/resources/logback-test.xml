@@ -12,7 +12,7 @@
     </appender>
 
     <appender name="FILE" class="ch.qos.logback.core.FileAppender">
-        <file>${LOG_PATH}/globalsqatestcases.logs</file>
+        <file>${LOG_PATH}/uitaptestcases.logs</file>
         <encoder>
             <pattern>
                 %d{HH:mm:ss.SSS} %C{36} - %msg%n
